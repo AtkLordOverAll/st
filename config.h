@@ -170,8 +170,9 @@ static uint forcemousemod = ShiftMask;
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = -1}        },
-	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = -1}        },
+    /* arg.i = lines to scroll (-1 for whole screen) */
+	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 2}         },
+	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 2}         },
 };
 
 /* Internal keyboard shortcuts. */
