@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMonoMedium Nerd Font:pixelsize=15:antialias=true:autohint=true";
+static char *font = "JetBrainsMonoMedium Nerd Font:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 0;
 
 /*
@@ -161,7 +161,7 @@ static unsigned int defaultattr = 11;
  * Note that if you want to use ShiftMask with selmasks, set this to an other
  * modifier, set to 0 to not use it.
  */
-static uint forcemousemod = ShiftMask;
+static uint forcemousemod = 0;
 
 /*
  * Internal mouse shortcuts.
